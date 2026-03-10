@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://86644nr4sya6"]
+
+[ext_resource type="Script" uid="uid://bm58lqgx78lqu" path="res://mapa.gd" id="1_2jh14"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2jh14"]
+bg_color = Color(0, 0.54509807, 0.6117647, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Node2D" type="Node2D" unique_id=1998941876]
+script = ExtResource("1_2jh14")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=803694981]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1235870954]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 30
+text = "Movimento: 3 / 3"
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=2061809185]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -110.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_2jh14")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2jh14")
+text = "Passar Turno"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
