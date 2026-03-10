@@ -24,6 +24,12 @@ offset_bottom = 23.0
 theme_override_font_sizes/font_size = 30
 text = "Movimento: 3 / 3"
 
+[node name="LabelCristais" type="Label" parent="CanvasLayer" unique_id=189015950]
+offset_right = 75.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 30
+text = "Cristais: 0"
+
 [node name="Button" type="Button" parent="CanvasLayer" unique_id=2061809185]
 anchors_preset = 3
 anchor_left = 1.0
